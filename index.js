@@ -12,7 +12,7 @@ class Sprite {
     this.image = new Image(); // drawing the image with draw method
     this.image.src = imageSrc;
   }
-//
+  //
   draw() {
     if (!this.image) return;
     c.drawImage(this.image, this.position.x, this.position.y);
@@ -22,7 +22,9 @@ class Sprite {
     this.draw();
   }
 }
+// bugun hava cok guzel ?????
 
+const test = "5677";
 class Player {
   constructor(position) {
     this.position = position;
@@ -83,7 +85,7 @@ function animate() {
   c.fillRect(0, 0, canvas.width, canvas.height);
 
   c.save();
-  c.scale(4, 2);  /// zoom in 
+  c.scale(4, 2); /// zoom in
   background.update();
   c.restore();
   player.update();
