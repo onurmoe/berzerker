@@ -12,7 +12,7 @@ class Sprite {
     this.image = new Image(); // drawing the image with draw method
     this.image.src = imageSrc;
   }
-
+//
   draw() {
     if (!this.image) return;
     c.drawImage(this.image, this.position.x, this.position.y);
